@@ -10,18 +10,17 @@
     <header>
         <img src="icons8-developer_w (2).svg" alt="Logo">
         <nav>
-        <a href="index.html">Home</a>
-        <a href="contacto.html">Contacto</a>
-        <a href="proyectos.html">Proyectos</a>
+            <a href="#banner">Home</a>
+            <a href="#contacto">Contacto</a>
         </nav>
     </header>
     <main>
-        <section class="banner">
+        <section class="banner" id="banner">
             <h1>Santiago, front-end developer</h1>
             <p>Desarrollo sitios web y aplicaciones web con tecnologías modernas.</p>
             <img src="icons8-developer.svg" alt="Icono">
-            </section>
-            <section class="descripcion">
+        </section>
+        <section class="descripcion" id="descripcion">
             <h2>Sobre mi</h2>
             <p>Ofrezco una amplia gama de servicios de desarrollo web, incluyendo:</p>
             <ul>
@@ -31,10 +30,23 @@
                 <li>Optimización SEO</li>
             </ul>
         </section>
+        <section class="contacto" id="contacto">
+            <h1>Contacto</h1>
+            <form action="#">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                <button type="submit">Enviar mensaje</button>
+            </form>
+            <h3>Información de contacto</h3>
+        </section>
     </main>
     <footer>
-        <p>&copy; 2024 - Todos los derechos reservados</p>
-    </footer>
-</body>
-</html>
+        <p>&copy; 2024 - Todos los derechos reservados</p
+
 
