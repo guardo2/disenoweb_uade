@@ -5,12 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desarrollador Web y JavaScript</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .tools-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .tool {
+            width: 23%;
+            text-align: center;
+        }
+
+        .tool img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
     <header>
         <img src="icons8-developer_w (2).svg" alt="Logo">
         <nav>
             <a href="#banner">Home</a>
+            <a href="#herramientas">Herramientas</a>
             <a href="#contacto">Contacto</a>
         </nav>
     </header>
@@ -18,7 +37,7 @@
         <section class="banner" id="banner">
             <h1>Santiago, front-end developer</h1>
             <p>Desarrollo sitios web y aplicaciones web con tecnologías modernas.</p>
-            <img src="icons8-developer.svg" alt="Icono">
+            <img src="logo_main.svg" alt="Icono">
         </section>
         <section class="descripcion" id="descripcion">
             <h2>Sobre mi</h2>
@@ -30,8 +49,25 @@
                 <li>Optimización SEO</li>
             </ul>
         </section>
+        <section class="descripcion" id="herramientas">
+            <h2>Herramientas</h2>
+            <div class="tools-section">
+                <div class="tool">
+                    <img src="icons8-html.svg" alt="html">
+                </div>
+                <div class="tool">
+                    <img src="icons8-javascript-50.png" alt="JavaScript">
+                </div>
+                <div class="tool">
+                    <img src="icons8-react-80.png" alt="React">
+                </div>
+                <div class="tool">
+                    <img src="icons8-css.svg" alt="CSS">
+                </div>
+            </div>
+        </section>
         <section class="contacto" id="contacto">
-            <h1>Contacto</h1>
+            <h3>Contacto</h3>
             <form action="#">
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required>
@@ -43,10 +79,13 @@
                 <textarea id="mensaje" name="mensaje" required></textarea>
                 <button type="submit">Enviar mensaje</button>
             </form>
-            <h3>Información de contacto</h3>
+            <h4>Información de contacto</h4>
+            <a href="https://www.instagram.com/santiguardo_/"><img src="icons8-instagram-50.png" alt="Instagram logo"></a>
+            <a href="https://github.com/guardo2"><img src="icons8-github.svg" alt="Github logo"></a>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 - Todos los derechos reservados</p
-
-
+        <p>&copy; 2024 - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

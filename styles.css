@@ -1,13 +1,12 @@
-/* Estilo general para body */
 body {
-    background-color: #222; /* Color de fondo oscuro */
-    color: #fff; /* Color de texto blanco */
-    font-family: sans-serif; /* Tipografía sans-serif */
+    background-color: #222;
+    color: #fff;
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Encabezado */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -26,17 +25,16 @@ nav a {
     margin-right: 20px;
 }
 
-/* Secciones */
 main {
-    padding: 50px 0; /* Agregar margen entre secciones */
+    padding: 50px 0;
 }
 
 section {
-    max-width: 800px; /* Ancho máximo para las secciones */
-    margin: 0 auto; /* Centrar las secciones */
+    max-width: 800px;
+    margin: 0 auto;
     padding: 20px;
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 section h1,
@@ -49,26 +47,26 @@ section p {
     line-height: 1.5;
 }
 
-/* Banner */
+
 .banner {
     text-align: center;
 }
 
 .banner h1 {
-    font-size: 48px; /* Tamaño de fuente más grande para el título */
+    font-size: 48px;
 }
 
-/* Descripción */
+
 .descripcion ul {
-    list-style: none; /* Eliminar viñetas */
+    list-style: none;
     padding: 0;
 }
 
 .descripcion li {
-    margin-bottom: 15px; /* Espacio entre elementos de la lista */
+    margin-bottom: 15px;
 }
 
-/* Contacto */
+
 .contacto form {
     display: flex;
     flex-direction: column;
@@ -80,6 +78,23 @@ section p {
     display: block;
 }
 
+.tools-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.tool {
+    width: 23%;
+    text-align: center;
+}
+
+.tool img {
+    max-width: 100%;
+    height: auto;
+}
+
 .contacto input,
 .contacto textarea {
     padding: 10px;
@@ -89,11 +104,11 @@ section p {
 }
 
 .contacto textarea {
-    resize: vertical; /* Permitir que el textarea se re dimensione */
+    resize: vertical;
 }
 
 .contacto button {
-    background-color: #007bff; /* Color de botón azul */
+    background-color: #007bff;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -101,7 +116,7 @@ section p {
     cursor: pointer;
 }
 
-/* Pie de página */
+
 footer {
     text-align: center;
     padding: 20px;
