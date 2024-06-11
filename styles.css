@@ -1,10 +1,82 @@
 body {
     background-color: #222;
     color: #fff;
-    font-family: sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
     margin: 0;
     padding: 0;
 }
+
+body h2{
+    font-size: 24px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+
+}
+
+body h3{
+    font-size: 24px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+
+}
+
+body h4{
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #ff9248;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #ff9248;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
 
 
 header {
@@ -22,7 +94,8 @@ header img {
 nav a {
     color: #fff;
     text-decoration: none;
-    margin-right: 20px;
+    font-size: 18px;
+    margin: auto 20px;
 }
 
 main {
@@ -31,10 +104,11 @@ main {
 
 section {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 20px auto; /* Separaciones entre secciones */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #292b2f; /* Fondo para secciones en modo oscuro */
 }
 
 section h1,
@@ -86,8 +160,10 @@ section p {
 }
 
 .tool {
+    margin-top: 25px;
     width: 23%;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .tool img {
@@ -108,12 +184,39 @@ section p {
 }
 
 .contacto button {
-    background-color: #007bff;
+    background-color: #222;
     color: #fff;
+    font-weight: bold;
+    font-size: 18px;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.hora-argentina{
+    margin-top: 40px;
+}
+
+.reloj {
+    font-size: 48px;
+    font-family: 'SF Mono', 'Roboto Mono', monospace;
+    text-align: center;
+    color: #ff9248;
+    margin-top: 0px;
+    background-color: #292b2f;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.horario-contacto {
+    font-size: 20px;
+    font-family: 'SF Mono', 'Roboto Mono', monospace;
+    text-align: center;
+    color: #ffffff;
+    background-color: #292b2f;
+    padding: 5px;
+
 }
 
 
@@ -125,3 +228,114 @@ footer {
 
 
 
+
+
+
+/* Estilos para el modo claro */
+body.light-mode {
+    background-color: #f4f3ef;
+    color: #000;
+}
+
+header.light-mode {
+    background-color: #222;
+    color: #fff;
+}
+
+nav a.light-mode {
+    color: #fff;
+}
+
+section.light-mode {
+    background-color: #eae8e0;
+    color: #000;
+    margin: 20px auto; /* Separaciones entre secciones */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .reloj {
+    color: #ff9248;
+    background-color: #eae8e0;
+}
+
+body.light-mode .horario-contacto {
+    color: #292b2f;
+    background-color: #eae8e0;
+}
+
+
+footer.light-mode {
+    background-color: #f4f3ef;
+    color: #000;
+}
+
+
+@media only screen and (max-width: 600px) {
+    header img {
+        width: 40px;
+        height: 40px;
+    }
+
+    nav {
+        width: 100%;
+        text-align: center;
+    }
+
+    header img {
+        width: 80px; 
+        height: auto; 
+    }
+
+    .switch {
+        width: 80px; 
+        height: 35px; 
+    }
+
+    nav a {
+        display: block;
+        padding: 10px;
+        margin: 5px;
+    }
+
+
+    section {
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    section h1 {
+        font-size: 36px;
+    }
+
+    .tool {
+        width: 40%;
+        margin-bottom: 20px;
+    }
+
+    .contacto input,
+    .contacto textarea {
+        padding: 8px;
+    }
+
+    .contacto button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .reloj{
+        font-size: 36px;
+    }
+
+    .horario-contacto {
+        font-size: 18px;
+    }
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .tool {
+        width: 30%;
+    }
+}

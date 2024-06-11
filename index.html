@@ -1,91 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desarrollador Web y JavaScript</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        .tools-section {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 20px;
-        }
-
-        .tool {
-            width: 23%;
-            text-align: center;
-        }
-
-        .tool img {
-            max-width: 100%;
-            height: auto;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <img src="icons8-developer_w (2).svg" alt="Logo">
-        <nav>
-            <a href="#banner">Home</a>
-            <a href="#herramientas">Herramientas</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
-    </header>
-    <main>
-        <section class="banner" id="banner">
-            <h1>Santiago, front-end developer</h1>
-            <p>Desarrollo sitios web y aplicaciones web con tecnologías modernas.</p>
-            <img src="logo_main.svg" alt="Icono">
-        </section>
-        <section class="descripcion" id="descripcion">
-            <h2>Sobre mi</h2>
-            <p>Ofrezco una amplia gama de servicios de desarrollo web, incluyendo:</p>
-            <ul>
-                <li>Diseño y desarrollo de sitios web</li>
-                <li>Aplicaciones web a medida</li>
-                <li>Mantenimiento y actualización de sitios web</li>
-                <li>Optimización SEO</li>
-            </ul>
-        </section>
-        <section class="descripcion" id="herramientas">
-            <h2>Herramientas</h2>
-            <div class="tools-section">
-                <div class="tool">
-                    <img src="icons8-html.svg" alt="html">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Desarrollador Web y JavaScript</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <img src="icons8-developer_w (2).svg" alt="Logo">
+            <nav>
+                <a href="#banner">Home</a>
+                <a href="#herramientas">Herramientas</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+            <label class="switch">
+                <input type="checkbox" id="input">
+                <span class="slider"></span>
+            </label>
+        </header>
+        <main>
+            <section class="banner" id="banner">
+                <h1>Santiago, web developer</h1>
+                <p>Desarrollo sitios web y aplicaciones web con tecnologías modernas.</p>
+                <img src="logo_main.svg" alt="Icono">
+            </section>
+            <section class="descripcion" id="descripcion">
+                <h2>Sobre mi</h2>
+                <p>Ofrezco una amplia gama de servicios de desarrollo web, incluyendo:</p>
+                <ul>
+                    <li>Diseño y desarrollo de sitios web</li>
+                    <li>Aplicaciones web a medida</li>
+                    <li>Mantenimiento y actualización de sitios web</li>
+                    <li>Optimización SEO</li>
+                </ul>
+            </section>
+            <section class="descripcion" id="herramientas">
+                <h2>Herramientas</h2>
+                <div class="tools-section">
+                    <div class="tool">
+                        <img src="html-anim.svg" alt="html">
+                    </div>
+                    <div class="tool">
+                        <img src="javascript-anim.svg" alt="JavaScript">
+                    </div>
+                    <div class="tool">
+                        <img src="react-anim.svg" alt="React">
+                    </div>
+                    <div class="tool">
+                        <img src="css-anim.svg" alt="CSS">
+                    </div>
                 </div>
-                <div class="tool">
-                    <img src="icons8-javascript-50.png" alt="JavaScript">
+                <div class="tools-section">
+                    <div class="tool">
+                        <img src="node-anim.svg" alt="nodejs">
+                    </div>
+                    <div class="tool">
+                        <img src="python-anam.svg" alt="Python">
+                    </div>
+                    <div class="tool">
+                        <img src="mysql.svg" alt="MySQL">
+                    </div>
+                    <div class="tool">
+                        <img src="vuejs-anim.svg" alt="vue">
+                    </div>
                 </div>
-                <div class="tool">
-                    <img src="icons8-react-80.png" alt="React">
+            </section>
+            <section class="contacto" id="contacto">
+                <h3>Contacto</h3>
+                <form action="#">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="number" id="telefono" name="telefono">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                    <button type="submit">Enviar mensaje</button>
+                </form>
+                <h4>Información de contacto</h4>
+                <a href="https://www.instagram.com/santiguardo_/"><img src="instagram-anim.svg" alt="Instagram logo"></a>
+                <a href="https://github.com/guardo2"><img src="github-anim.svg" alt="Github logo"></a>
+                <div id="hora-argentina">
+                    <h4 class="hora-argentina">Hora en Argentina</h4>
+                    <p id="tiempo-argentina" class="reloj">Cargando...</p>
+                    <p id="horario-contacto" class="horario-contacto">Horario de contacto: 9:00 AM a 8:00 PM</p>
                 </div>
-                <div class="tool">
-                    <img src="icons8-css.svg" alt="CSS">
-                </div>
-            </div>
-        </section>
-        <section class="contacto" id="contacto">
-            <h3>Contacto</h3>
-            <form action="#">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono">
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
-                <button type="submit">Enviar mensaje</button>
-            </form>
-            <h4>Información de contacto</h4>
-            <a href="https://www.instagram.com/santiguardo_/"><img src="icons8-instagram-50.png" alt="Instagram logo"></a>
-            <a href="https://github.com/guardo2"><img src="icons8-github.svg" alt="Github logo"></a>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 - Todos los derechos reservados</p>
-    </footer>
-</body>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 - Todos los derechos reservados</p>
+        </footer>
+        <script src="hora.js"></script>
+        <script src="script.js"></script>
+    </body>
 </html>
