@@ -4,6 +4,9 @@ document.addEventListener("DOMContentLoaded", function() {
     async function actualizarHora() {
         try {
             const respuesta = await fetch('http://worldtimeapi.org/api/timezone/America/Argentina/Buenos_Aires');
+            if (!respuesta.ok) {
+                throw new Error('Network response was not ok');
+            }
             const datos = await respuesta.json();
             const horaArgentina = new Date(datos.datetime).toLocaleTimeString('es-AR', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
             tiempoArgentina.textContent = horaArgentina;
@@ -17,4 +20,6 @@ document.addEventListener("DOMContentLoaded", function() {
     actualizarHora();
     setInterval(actualizarHora, 1000);
 });
+
+
 
